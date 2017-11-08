@@ -39,7 +39,7 @@ Licensee any ownership interest in the GP Test Products.
  *
  * ---------------------------------------------------------------------------- */
 
-package com.simalliance.ara;
+package org.globalplatform.test.ara;
 
 import javacard.framework.*;
 

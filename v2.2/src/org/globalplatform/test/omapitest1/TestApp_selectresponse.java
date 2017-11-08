@@ -39,7 +39,7 @@ Licensee any ownership interest in the GP Test Products.
  *
  * ---------------------------------------------------------------------------- */
 
-package org.simalliance.omapitest1;
+package org.globalplatform.test.omapitest1;
 
 import javacard.framework.*;
 
