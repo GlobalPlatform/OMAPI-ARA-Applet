@@ -1,6 +1,7 @@
+REM Location of Java executables
 @SET JAVADIR=..\..\..\..\Tools\j2sdk1.5.0_22\bin
-@SET DEVDIR=..\..\..\..\Tools\DEVENV
-@SET JCKIT=%DEVDIR%\java_card_kit-2_2_2\java_card_kit-2_2_2\java_card_kit-2_2_2-rr-bin-windows-do
+REM Location of Java Card classes
+@SET JCKIT=..\..\..\..\Tools\DEVENV\java_card_kit-2_2_2\java_card_kit-2_2_2\java_card_kit-2_2_2-rr-bin-windows-do
 @SET VERSION=1.0
 
 
