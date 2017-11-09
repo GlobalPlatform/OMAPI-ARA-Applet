@@ -1,43 +1,27 @@
-/*************************************************************************************
-Copyright (c) 2017 GlobalPlatform Inc. All Rights Reserved.
-Recipients of this document are invited to submit, with their comments, notification 
-of any relevant patent rights or other intellectual property rights of which they may 
-be aware which might be infringed by the implementation of the specification set forth 
-in this document, and to provide supporting documentation. The technology provided or 
-described herein is subject to updates, revisions, and extensions by GlobalPlatform. 
-Use of this information is governed by the GlobalPlatform license agreement and any 
-use inconsistent with that agreement is strictly prohibited.
+/*********************************************************************************
+ Copyright 2017 GlobalPlatform, Inc. 
 
-1. GRANT OF LICENSE.
-1.1 License. GlobalPlatform hereby grants to Licensee, its Affiliates and End Users, 
-a non-exclusive, perpetual (except as provided for herein), royalty-free, fully paid-up, 
-worldwide license in the GP Test Product(s) purchased by it for purposes of testing  
-secure chips and/or TEEs for compliance with the relevant GlobalPlatform Card, Device 
-or Systems related product or component.
+ Licensed under the GlobalPlatform/Apache License, Version 2.0 (the "License"); 
+ you may not use this file except in compliance with the License. 
+ You may obtain a copy of the License at 
 
-1.2 Modifications. Licensee, its Affiliates and End Users shall not modify the GP Test 
-Products.
+ http://www.globalplatform.org/___________ 
 
-1.3 Sublicensing. Licensee, its Affiliates and End Users, may sublicense the GP Test 
-Products provided that any sublicensee agrees to be bound by the terms of this Agreement, 
-and if such sublicensee is not a member of GP, such sublicensee pays the then-current 
-purchase price for such license to ICCS. Any Licensee, Affiliate or End User that 
-sublicenses any GP Test Product shall report such sublicense and the name of any such 
-sublicensee to GP immediately after the effectiveness of such sublicense.
+ Unless required by applicable law or agreed to in writing, software 
+ distributed under the License is distributed on an "AS IS" BASIS, 
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or 
+ implied. 
+ See the License for the specific language governing permissions and 
+ limitations under the License. 
+*********************************************************************************/
 
-2. INTELLECTUAL PROPERTY. Licensee acknowledges and agrees that, as between Licensee 
-and GlobalPlatform, all GP Test Products shall at all times be the exclusive property 
-of GlobalPlatform, and nothing in this Agreement shall be construed to convey to 
-Licensee any ownership interest in the GP Test Products.
-*************************************************************************************/
-
-/* ----------------------------------------------------------------------------
+/*********************************************************************************
  *   CHANGE HISTORY:
  *
  * 2017/11/08:
  * 	- First version.
  *
- * ---------------------------------------------------------------------------- */
+ ********************************************************************************/
 
 package org.globalplatform.test.ara;
 
