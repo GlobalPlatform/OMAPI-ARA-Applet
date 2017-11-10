@@ -5,7 +5,7 @@
  you may not use this file except in compliance with the License. 
  You may obtain a copy of the License at 
 
- http://www.globalplatform.org/___________ 
+ https://github.com/GlobalPlatform/OMAPI_Test_Spec/blob/master/GlobalPlatform%20Apache%20License.pdf
 
  Unless required by applicable law or agreed to in writing, software 
  distributed under the License is distributed on an "AS IS" BASIS, 
