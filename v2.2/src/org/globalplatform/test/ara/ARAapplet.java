@@ -53,9 +53,9 @@ public class ARAapplet extends Applet implements MultiSelectable {
             (byte) 0x01, (byte) 0xEE, (byte) 0x05, (byte) 0x01, (byte) 0xC1,
             (byte) 0x00, (byte) 0x00 };
     private final static byte[] RESPONSE_GET_SPECIFIC_TestApp = {
-            (byte) 0xFF, (byte) 0x50, (byte) 0x4F,
-                (byte) 0xE3, (byte) 0x4D,
-                    (byte) 0xD0, (byte) 0x48,
+            (byte) 0xFF, (byte) 0x50, (byte) 0x67,
+                (byte) 0xE3, (byte) 0x65,
+                    (byte) 0xD0, (byte) 0x60,
                         (byte) 0x00, (byte) 0x10, (byte) 0x01, (byte) 0x00,
                         (byte) 0xF0, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF,
                         (byte) 0x00, (byte) 0x10, (byte) 0x02, (byte) 0x00,
@@ -76,12 +76,21 @@ public class ARAapplet extends Applet implements MultiSelectable {
 												//Rule for APDU_INV_LC_INF_case4 and APDU_INV_LC_SUP_case4
                         (byte) 0x00, (byte) 0x10, (byte) 0x00, (byte) 0x00,
                         (byte) 0xF0, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF,
+												//Rule for Invalid APDU_with CLA ‘FF’
+                        (byte) 0xFF, (byte) 0x30, (byte) 0x00, (byte) 0x00,
+                        (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF,
+												//Rule for Invalid APDU_with INS ‘0x60 to 0x6F
+                        (byte) 0x00, (byte) 0x60, (byte) 0x00, (byte) 0x00,
+                        (byte) 0xF0, (byte) 0xF0, (byte) 0xFF, (byte) 0xFF,
+												//Rule for Invalid APDU_with INS ‘0x90 to 0x9F
+                        (byte) 0x00, (byte) 0x90, (byte) 0x00, (byte) 0x00,
+                        (byte) 0xF0, (byte) 0xF0, (byte) 0xFF, (byte) 0xFF,
                     (byte) 0xD1, (byte) 0x01, (byte) 0x00 };
     private final static byte[] RESPONSE_GET_SPECIFIC_OTHERS = { (byte) 0xFF,
             (byte) 0x50, (byte) 0x08, (byte) 0xE3, (byte) 0x06, (byte) 0xD0,
             (byte) 0x01, (byte) 0x01, (byte) 0xD1, (byte) 0x01, (byte) 0x01 };
     private final static byte[] RESPONSE_GET_ALL = {
-        (byte) 0xFF, (byte) 0x40, (byte) 0x8D,
+        (byte) 0xFF, (byte) 0x40, (byte) 0xA5,
             // Rules for AID A0 00 00 06 00 01 00 01 EE 05 FE
             (byte) 0xE2, (byte) 0x19,
                 (byte) 0xE1, (byte) 0x0F,
@@ -94,15 +103,15 @@ public class ARAapplet extends Applet implements MultiSelectable {
                     (byte) 0xD0, (byte) 0x01, (byte) 0x00,
                     (byte) 0xD1, (byte) 0x01, (byte) 0x00,
             // Rules for AID A0 00 00 06 00 01 00 01 EE 05 01
-            (byte) 0xE2, (byte) 0x60,
+            (byte) 0xE2, (byte) 0x78,
                 (byte) 0xE1, (byte) 0x0F,
                     (byte) 0x4F, (byte) 0x0B,
                         (byte) 0xA0, (byte) 0x00, (byte) 0x00, (byte) 0x06,
                         (byte) 0x00, (byte) 0x01, (byte) 0x00, (byte) 0x01,
                         (byte) 0xEE, (byte) 0x05, (byte) 0x01,
                     (byte) 0xC1, (byte) 0x00,
-                (byte) 0xE3, (byte) 0x4D,
-                    (byte) 0xD0, (byte) 0x48,
+                (byte) 0xE3, (byte) 0x65,
+                    (byte) 0xD0, (byte) 0x60,
                         (byte) 0x00, (byte) 0x10, (byte) 0x01, (byte) 0x00,
                         (byte) 0xF0, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF,
                         (byte) 0x00, (byte) 0x10, (byte) 0x02, (byte) 0x00,
@@ -123,6 +132,15 @@ public class ARAapplet extends Applet implements MultiSelectable {
 												//Rule for APDU_INV_LC_INF_case4 and APDU_INV_LC_SUP_case4
                         (byte) 0x00, (byte) 0x10, (byte) 0x00, (byte) 0x00,
                         (byte) 0xF0, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF,
+												//Rule for Invalid APDU_with CLA ‘FF’
+                        (byte) 0xFF, (byte) 0x30, (byte) 0x00, (byte) 0x00,
+                        (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF,
+												//Rule for Invalid APDU_with INS ‘0x60 to 0x6F
+                        (byte) 0x00, (byte) 0x60, (byte) 0x00, (byte) 0x00,
+                        (byte) 0xF0, (byte) 0xF0, (byte) 0xFF, (byte) 0xFF,
+												//Rule for Invalid APDU_with INS ‘0x90 to 0x9F
+                        (byte) 0x00, (byte) 0x90, (byte) 0x00, (byte) 0x00,
+                        (byte) 0xF0, (byte) 0xF0, (byte) 0xFF, (byte) 0xFF,
                     (byte) 0xD1, (byte) 0x01, (byte) 0x00,
             // Rules for all applets (allow all)
             (byte) 0xE2, (byte) 0x0E,
