@@ -6,27 +6,13 @@ REM Location of Java Card classes
 
 
 @ECHO **************************************************************************
-@ECHO ** Compilation OMAPI applets                                            **
+@ECHO ** Compilation OMAPI ARA applet                                         **
 @ECHO **************************************************************************
-
-%JAVADIR%\javac.exe -g -classpath %JCKIT%\lib\api.jar ^
-   -d bin ^
-   src\org\globalplatform\test\omapitest1\*.java
 
 %JAVADIR%\javac.exe -g -classpath %JCKIT%\lib\api.jar ^
    -d bin ^
    src\org\globalplatform\test\ara\*.java
 
-
-%JAVADIR%\java.exe -classpath %JCKIT%\lib\converter.jar;%JCKIT%\lib\offcardverifier.jar ^
-   com.sun.javacard.converter.Converter ^
-   -nobanner -out CAP ^
-   -exportpath %JCKIT%\api_export_files ^
-   -d out ^
-   -debug ^
-   -applet 0xA0:0x00:0x00:0x06:0x00:0x01:0x00:0x01:0xEE:0x05:0x07 org.globalplatform.test.omapitest1.TestApp_selectresponse ^
-   -classdir bin ^
-   org.globalplatform.test.omapitest1 0xA0:0x00:0x00:0x06:0x00:0x01:0x00:0x01:0xFF:0x05 %VERSION%
 
 %JAVADIR%\java.exe -classpath %JCKIT%\lib\converter.jar;%JCKIT%\lib\offcardverifier.jar ^
    com.sun.javacard.converter.Converter ^
