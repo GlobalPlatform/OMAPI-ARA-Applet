@@ -20,6 +20,8 @@
  *
  * 2017/11/08:
  * 	- First version.
+ * 2018/05/08:
+ *	- updated content of RESPONSE_GET_ALL (fixed length on 1 byte issue)
  *
  ********************************************************************************/
 
@@ -90,7 +92,7 @@ public class ARAapplet extends Applet implements MultiSelectable {
             (byte) 0x50, (byte) 0x08, (byte) 0xE3, (byte) 0x06, (byte) 0xD0,
             (byte) 0x01, (byte) 0x01, (byte) 0xD1, (byte) 0x01, (byte) 0x01 };
     private final static byte[] RESPONSE_GET_ALL = {
-        (byte) 0xFF, (byte) 0x40, (byte) 0xA5,
+        (byte) 0xFF, (byte) 0x40, (byte) 0x81, (byte) 0xA5,
             // Rules for AID A0 00 00 06 00 01 00 01 EE 05 FE
             (byte) 0xE2, (byte) 0x19,
                 (byte) 0xE1, (byte) 0x0F,
